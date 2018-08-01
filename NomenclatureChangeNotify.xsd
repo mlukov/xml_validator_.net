@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<xs:schema elementFormDefault="qualified" xmlns:xs="http://www.w3.org/2001/XMLSchema">     
+	<xs:include schemaLocation="../BisMsg.xsd"/>   
+	<xs:include schemaLocation="../SytemObjects/_include.xsd"/>     
+	<!--  Nomenclature change   20110429 plam  - created  -->      
+	<xs:element name="NomenclatureChangeNotify" type="NomenclatureChangeNotify"/>  
+	<xs:complexType name="NomenclatureChangeNotify">    
+	  <xs:complexContent>    
+		   <xs:extension base="BisMsg">     
+		   <xs:sequence>         
+		   </xs:sequence>      
+		   <xs:attribute name="_" type="xs:string" use="prohibited"/>     
+			<xs:attribute name="id" type="xs:string"/>
+			<!--identifikator na nomenklaturata koqto se e promenila-->     
+			</xs:extension>    
+		</xs:complexContent>   
+    </xs:complexType>       
+</xs:schema>
